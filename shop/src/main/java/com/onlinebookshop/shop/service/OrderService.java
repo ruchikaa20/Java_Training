@@ -29,11 +29,11 @@ public class OrderService {
         return orderRepository.findById(id);
     }
 
-    public void updateOrder(Order order) {
-        orderRepository.update(order);
+    public int updateOrder(Order order) {
+        return orderRepository.update(order);
     }
 
-    public void deleteById(int id) {
-        orderRepository.delete(id);
+    public int deleteById(int id) {
+        return orderRepository.delete(id);
     }
 }

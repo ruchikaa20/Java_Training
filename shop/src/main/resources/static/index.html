@@ -46,22 +46,647 @@
 			<button type="button">Add Book</button>
 		</form>	
 		</div>
+			
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		<h1 id="heading">Welcome to java script</h1>
+		<p class="message">This is a message</p>
+		<button id="btn">Click Me</button>
 		
 	</body>
+	<script type="module" src="app.js"></script>
+<!--  
+	<script>
+			function example(){
+				let x = -10;
+				if(true){
+					let x = 20
+					console.log(x);
+				}
+				console.log(x);
+			}
+			
+			example();
+			
+			
+			
+			const pep = {name: "ruchika", age: 22}
+			console.log(pep);
+			pep.age = 20;
+			console.log(pep);
+		//	person = {name: "khushi"}  -> error 
+		//	console.log(person);
+			
+		//concatenation
+			let name = "ruchika"
+			console.log("Hello, "+name+" welcome !");
+		
+		//with template literals
+			console.log(`Hello,  ${name}  welcome !`);
+			
+		//concatenation
+			let line = "this is line1. \n" + "this is line2.";
+			console.log(line);
+		
+		//with template literals
+			let text1 = `this is line1. 
+			this is line2.`;
+			console.log(text1);
+		
+			let product = "laptop"
+			let price = 55000
+			console.log(`The price of ${product} is ${price}`);
+		
+			console.log("----------strings properties--------------------");
+		// String Methods
+			 
+			let text = "  JavaScript is Awesome!  ";
+			console.log("Original Text:", text);
+			 
+			console.log("Length:", text.length);
+			console.log("To Upper Case:", text.toUpperCase());
+			console.log("To Lower Case:", text.toLowerCase());
+			console.log("Trimmed Text:", text.trim());
+			console.log("Slice (2, 10):", text.slice(2, 10));
+			console.log("Replace 'Java' with 'Type':", text.replace("Java", "Type"));
+			 
+			let text2 = "value1, value2, value3";
+			console.log("Split by comma:", text2.split(","));
+			 
+			
+			console.log("----------arrays properties--------------------");
+		// Array Methods
+			let numbers = [10, 20, 30, 40, 50];
+			let gadgets = ["Laptop", "Smartphone", "TV"];
+			 
+			console.log("\nOriginal Arrays:");
+			console.log("Numbers:", numbers);
+			console.log("Gadgets:", gadgets);
+			 
+			console.log("\nAccess Element (index 2):", gadgets[2]);
+			 
+			// Modifying arrays
+			gadgets.push("Earphone");
+			console.log("After Push:", gadgets);
+			 
+			gadgets.pop();
+			console.log("After Pop:", gadgets);
+			 
+			gadgets.shift();
+			console.log("After Shift:", gadgets);
+			 
+			gadgets.unshift("Mic");
+			console.log("After Unshift:", gadgets);
+			 
+			console.log("Index of 'Smartphone':", gadgets.indexOf("Smartphone"));
+			console.log("Includes 'Earphone':", gadgets.includes("Earphone"));
+			 
+			console.log("Slice (1, 3):", gadgets.slice(1, 3));
+			 
+			gadgets.splice(1, 2);
+			console.log("After Splice (1, 2):", gadgets);
+			 
+			console.log("Join with '-':", gadgets.join("-"));
+			 
+			gadgets.reverse();
+			console.log("After Reverse:", gadgets);
+			 
+			gadgets.sort();
+			console.log("After Sort:", gadgets);
+			 
+		// Looping through arrays
+			console.log("\nUsing forEach:");
+			gadgets.forEach((gadget) => console.log(gadget));
+			 
+		// Using map()
+			let squaredNumbers = numbers.map(num => num * num);
+			console.log("Squared Numbers:", squaredNumbers);
+			 
+			
+		    console.log("----------objects properties--------------------");
+		
+		// objects
+			let person = {
+				name: "riya",
+				age: 18,
+				hasAadharCard: true
+		    }
+			
+		//access object dot and bracket notation
+			console.log(person.age);
+			console.log(person["age"]);
+		
+	   //add and update properties
+	        person.city = "Indore";
+	        console.log("after adding city to person :", person);
+	        person.age = 20;
+			console.log("after updating age of person :", person);
+		
+		//delete
+			delete person.hasAadharCard;
+			console.log("after deleting :", person);
+			
+		//objects having functions as properties
+			let user = {
+				name: "mahima",
+				greet: function(){
+					console.log(`hello , my name is ${this.name}`);
+				}
+		    }
+			user.greet();
+		
+		//object destructuring
+		
+			let species = {
+				color: "brown",
+				breed: "pet",
+				height: 4
+			}
+			let {color, breed, height} = species;
+			console.log(color);
+			console.log(breed);
+			
+		//copy objects
+		//object spread operator -> (...)
+			let obj1 = {a:12, b:15};
+		    let obj2 = {...obj1, c:20};
+		    console.log("object 1: ", obj1);
+		    console.log("after copying object 1 in 2: ", obj2);
+			
+			
+		//merge objects
+			let userD = {name: "deepa", age: 21};
+			console.log(userD);
+			let userLoc = {city: "delhi", country: "india"};
+			console.log(userLoc);
+			let userAllD = {...userD, ...userLoc};
+			console.log("after merging :", userAllD)
+			
+			console.log("----------loops--------------------");
+		//conditional statements 	
+			for(let i=1; i<5; i++){
+				
+			}
+			
+		//for in loop -> iterate over object properties
+			console.log("for in loop");
+			for(let key in person){
+				console.log(key + " : " + person[key]);
+			}
+			
+		//for of loop -> iterate over arrays and strings
+			console.log("for of loop");
+			for(let gadget of gadgets){
+				console.log(gadget);
+			}
+			
+			let r = "hello everyone"
+			for(let ch of r){
+				console.log(ch);
+			}
+			
+			console.log("----------functions properties--------------------");
+		//functions -> stored in a variable
+		//anonymous function -> fucntion with no name
+			
+		 	const add = function(a,b) {
+						return a+b;
+			}
+		    console.log("anonymous function : ", add(2,4));
+			
+		//arrow function -> shorter syntax, automatically bind this
+			const multiply = (x,y) => x*y;
+			console.log("arrow function : ", multiply(2,4));
+			
+		//single parameter function
+			const cube = x => x * x * x;
+			console.log(cube(5));
+			
+		//multiline arrow function	
+			const greet = (name) => {
+				let message = `hello, ${name}, welcome`;
+				return message;
+			};
+			console.log(greet("ruchika"));
+			
+		//higher order function (HOF) -> takes another function as an argument , returns a function
+			function operate (num1, num2, operation){    //operate is HOF
+				return operation(num1, num2);
+		    }
+			
+			console.log(operate(12, 15, add));  //take add function as an parameter(operation)
+			console.log(operate(5, 10, multiply));
+			
+		//function returning a function
+			function greeting(message) {
+				return function(name) {
+					console.log(`${message}, ${name}`);
+				};
+			}
+			
+			const hellomsg = greeting("hello");
+			hellomsg("ruchika");
+		
+		//find available room 
+			console.log("----------------hotel room--------------");
+			const hotelRooms = [
+				{type: "Standard", price:5500, available: true},
+				{type: "delux", price:6000, available: false},
+				{type: "delux", price:8500, available: true},
+				{type: "Standard", price:12000, available: true}
+			];
+			
+			
+			function findAvailableRooms(rooms, minPrice, maxprice) {
+				return rooms
+				.filter(room => room.available && room.price >= minPrice && room.price <= maxprice)
+				.map(room => ({type: room.type, price: room.price}));
+			}
+			
+			console.log(findAvailableRooms(hotelRooms, 5000, 10000));
+		
+		//generate shopping cart bill
+			console.log("----------------generate bill--------------");
+			const cart = [
+				{name: "laptop", price: 55000, quantity: 2},
+				{name: "TV", price: 78000, quantity: 1},
+				{name: "Microwave", price: 65000, quantity: 3},
+				{name: "Washing machine", price: 65000, quantity: 1}
+			];
+		
+			
+			let total = 0;
+			function generateBill(items) {
+				const receipt = items.map(item => {
+					const subTotal = item.price * item.quantity;
+					total += subTotal;
+					return {name: item.name, price: item.price, subTotal: subTotal};
+				});
+				return receipt;
+			}
+			
+			console.log(generateBill(cart));
+			console.log("total bill amount: "+ total);
+			
+			
+		//generate report card	
+			console.log("----------------report card--------------");
+			const studentData = {
+				    name: "ruchika",
+				    marks: {
+				        maths: 95,
+				        science: 97,
+				        computer: 90
+				    }
+				};
+			 
+			
+			function generateReportCard(student) {
+				   const marks = Object.values(student.marks);
+				   const totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
+				   const averageMarks = totalMarks / marks.length;
+				   const percentage = (totalMarks / (marks.length * 100)) * 100;
+			 
+				   console.log(`Student Name: ${student.name}`);
+				   console.log(`Total Marks: ${totalMarks}`);
+				   console.log(`Average Marks: ${averageMarks.toFixed(2)}`);
+				   console.log(`Percentage: ${percentage.toFixed(2)}%`);
+			}
+			 
+			generateReportCard(studentData);
+			
+			
+			
+			
+		//get element by id, class and tags	
+			
+			const heading = document.getElementById('heading');
+			console.log(heading.textContent);
+			const message = document.getElementsByClassName('message')[0];
+			console.log(message.textContent);
+			const tag = document.getElementsByTagName('h1')[0];
+			console.log(tag.textContent);
+			
+		//query selectors()
+			const head = document.querySelector('#heading');
+			console.log(head.textContent);
+			const msg = document.querySelector('.message');
+			console.log(msg.textContent);
+			const tagg = document.querySelector('h1');
+			console.log(tagg.textContent);
+			
+		//modifying DOM elements
+		//	heading.innerHTML = "<content>"
+			heading.style.color = 'violet';
+			console.log(heading.textContent);
+			 
+			message.textContent = 'This is changed message.';
+			console.log(message.textContent);
+			tag.style.fontSize = '24px';
+			console.log(tag.textContent);
+			
+		
+			const button = document.getElementById('btn');
+			button.addEventListener('click', () => {
+			    alert('Button clicked');
+			});
+			
+			
+			//button.setAttribute("disabled", "true");
+			
+		// Event Handling
+		    if (button) {
+		        button.removeAttribute("disabled"); // Enable button again
+		        button.addEventListener("click", () => {
+		            heading.textContent = "Heading Changed!";
+		            alert("Button Clicked!");
+		        });
+		 // Change background color on mouseover
+		        button.addEventListener("mouseover", () => {
+		            button.style.backgroundColor = "lightblue";
+		        });
+		        button.addEventListener("mouseout", () => {
+		            button.style.backgroundColor = "";
+		        });
+		   		 }
+	    // Keypress event listener
+			    document.addEventListener("keypress", (event) => {
+			        console.log("Key Pressed:", event.key);
+			    });
+			
+			
+		//callback function	-> traditional approach
+			function fetchData(callback){
+				console.log("Fetching data using callback...........");
+				//asyncronous operation
+				setTimeout( () => {
+					let data = { name: "ruchika", age: 22};
+					callback(data);
+				}, 3000);
+			}
+			
+			function processData (data) {
+				console.log("Processing data using callback..............",data);
+			}
+			fetchData(processData);
+			
+		//promise -> object that represents the eventual completion or failure of async operation
+			function fetchDataP(){
+				return new Promise((resolve, reject) => {
+					console.log("Fetching data using promise...........");
+					setTimeout( () => {
+						let success = true;     
+						if (success) {
+							resolve({name: "riya", age:22});
+						}
+						else {
+							reject("Error: Failed to fetch data")
+						}
+						
+					}, 3000);
+				});
+			}
+			
+		//using the promise
+		//returns the promise object
+		//.then -> handling the success | .catch -> handling the error
+		//.then -> used for chaining in promise
+			fetchDataP()
+				.then ((data) => {
+					console.log("Processing data through chaining..............",data);
+					return {...data, city:"indore"};
+				})
+				.then ((updatedData) => {
+					console.log("Processing updated data..............",updatedData);
+				})
+				.catch ((error) => {
+					console.log(error);
+				})
+			
+		
+		//await and async
+			async function getData(){
+				console.log("Fetching the data");
+					try {
+						let data = await fetchDataP();
+						console.log("Processing data.......",data);
+						
+						let updatedData = {...data, city:"indore"};
+						console.log("Processing updated data",updatedData);	
+						
+					}
+
+					catch (error) {
+						console.log("Error: ",error);	
+					}
+				}
+				
+			getData();
+			
+		//fetch API -> using promise
+			
+		//make the GET request
+			function fetchUserData() {
+				fetch("https://jsonplaceholder.typicode.com/users")
+				.then((response) => {
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					return response.json();
+				})
+				.then ((data) => {
+					console.log("Users data: ",data);
+				})
+				.catch((error) => {
+					console.log("Error: ",error);
+				});
+			}
+			
+			fetchUserData();
+			
+		//fetch API -> using await
+		
+			async function fetchUserData1(){
+				
+				try {
+					let response = await fetch("https://jsonplaceholder.typicode.com/users");
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					let data = await response.json();
+					console.log("Users data: ",data);
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				}
+			}
+			
+			fetchUserData1();	
+			
+		//fetching data of 1 user with parameters
+			
+			async function fetchUserDataById(userID){
+				
+				try {
+					let response = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`);
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					let data = await response.json();
+					console.log("Users data: ",data);
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				}
+			}
+			
+			fetchUserDataById(2);
+			
+		//fetching data of multiple users with parameters
+			
+			async function fetchMulitpleUserDataById(userIDs){
+				
+				try {
+					let userPromises = userIDs.map((id) => fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+							.then((response) => {
+								if(!response.ok){
+									throw new Error(`http error: status : ${response.status}`);
+								}
+								return response.json();
+							})
+							
+					);
+					
+					let users = await Promise.all(userPromises);
+					console.log("Users data: ",users);
+					
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				}
+			}
+			
+			fetchMulitpleUserDataById([2, 4, 6]);	
+			
+			
+		//make the POST request	
+			
+			async function createUser(newUser) {
+				try {
+					let response = await fetch("https://jsonplaceholder.typicode.com/users" ,
+							{
+								method: "POST",
+								headers: {
+									"Content-Type":"application/json",		
+								},
+								body : JSON.stringify(newUser),
+							}); 
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					let data = await response.json();
+					console.log("Users data: ",data);
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				}
+			}
+			
+			createUser({
+				"id": 11,
+			    "name": "ruchika parmar",
+			    "username": "ruch",
+			    "email": "ruche@april.biz",
+			    
+			  
+			});
+			
+		//delete request
+			async function deleteUser(userID) {
+				try {
+					let confirmation = window.confirm(`Are you sure you want to delete user with id ${userID}`);
+					if(!confirmation) {
+						console.log("user deletion cancelled");
+						return;
+					}
+					let response = await fetch("https://jsonplaceholder.typicode.com/users" ,
+							{
+						method: "DELETE",
+					}); 
+			if(!response.ok){
+				throw new Error(`http error: status : ${response.status}`);
+			}
+			console.log("user deleted");
+				}catch (error) {
+					console.log("Error: ",error);
+				}
+			}
+		
+			deleteUser(1);
+		
+		
+		//update all fields of user -> PUT
+			async function updateUser(userID, updatedData){
+				try {
+					let response = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`, {
+						method: "PUT",
+						headers: {
+							"Content-Type":"application/json"
+						},
+						body: JSON.stringify(updatedData)
+					});
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					let data = await response.json();
+					console.log("Users data updated successfully: ",data);
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				
+				}
+			}
+		
+			updateUser(2, {
+			    "name": "khushi rawat",
+			    "username": "khushi.Skiles",
+			    "email": "Telly.khu@billy.biz",
+			    "address": "123. delhi"
+			    });
+		
+		
+		
+		//update specific fields of user -> PATCH
+			async function updateUserSpecific(userID, updatedFields){
+				try {
+					let response = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`, {
+						method: "PATCH",
+						headers: {
+							"Content-Type":"application/json"
+						},
+						body: JSON.stringify(updatedFields)
+					});
+					if(!response.ok){
+						throw new Error(`http error: status : ${response.status}`);
+					}
+					let data = await response.json();
+					console.log("Users fields updated successfully: ",data);
+				}
+				catch (error) {
+					console.log("Error: ",error);
+				
+				}
+			}
+		
+		
+			updateUserSpecific(3, {
+			    "name": "mahima rai",
+			    "username": "mahima.Skiles",
+			    "email": "Telly.Hoeger@billy.biz",
+			    });
+			
+		</script>
+		
+	-->
+		
 </html>

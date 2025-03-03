@@ -17,8 +17,8 @@ import com.onlinebookshop.shop.service.OrderService;
  
 @SpringBootApplication
 @EnableAspectJAutoProxy
-public class ShopApplication implements CommandLineRunner {
- 
+public class ShopApplication { //implements CommandLineRunner {
+ /*
 	@Autowired
 	private BookService bookService ;
 	
@@ -28,10 +28,7 @@ public class ShopApplication implements CommandLineRunner {
 	@Autowired
     private OrderService orderService;
 	
-	
-	//inject the author beans
-	
-	//inject the order beans
+
 	
 	
 	@Autowired
@@ -48,11 +45,13 @@ public class ShopApplication implements CommandLineRunner {
     private Order order2;
 	
 	
-    
+ */   
 	public static void main(String[] args) {
 		SpringApplication.run(ShopApplication.class, args);
 	}
  
+	
+/*
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
@@ -160,6 +159,6 @@ public class ShopApplication implements CommandLineRunner {
  
     }
 		
-	
+*/
  
 }

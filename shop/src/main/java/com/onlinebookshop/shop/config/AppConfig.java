@@ -22,12 +22,12 @@ public class AppConfig {
 	
 	@Bean
 	public Book book1() {
-		return new Book(1, "The Lean Startup", 29.99, 1);
+		return new Book(3, "The Lean Startup", 29.99, 1);
 	}
 	
 	@Bean
 	public Book book2() {
-		return new Book(2, "Ikigai", 39.99, 2);
+		return new Book(4, "Ikigai", 39.99, 2);
 	}
 	
 	@Bean

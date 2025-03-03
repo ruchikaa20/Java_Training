@@ -28,11 +28,11 @@ public class AuthorService {
 		return authorRepository.findById(id);
 	}
  
-	public void updateAuthor(Author author) {
-		authorRepository.update(author);
+	public int updateAuthor(Author author) {
+		return authorRepository.update(author);
 	}
-	public void deleteById(int id) {
-		authorRepository.delete(id);
+	public int deleteById(int id) {
+		return authorRepository.delete(id);
 	}
 	
 }
